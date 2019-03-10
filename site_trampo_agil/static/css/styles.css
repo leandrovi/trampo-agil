@@ -1,0 +1,156 @@
+/* General styles */
+.grid {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(200px, auto));
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.center {
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Header styles */
+header {
+    border-top: 2px solid #f7ce28;
+    grid-area: header;    
+}
+
+.logo > span {
+    color: #f7ce28;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+nav ul li a {
+    color: #222;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: -.8px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    color: #f7ce28;
+    cursor: pointer;
+}
+
+.header-opacity {
+    background-color: rgba(0,0,0,1);
+    height: 70vh;
+    position: relative;
+    width: 100%;
+}
+
+.header-opacity p {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 300px;
+}
+
+.header-img {
+    align-items: center;
+    background-image: url("../img/bullet-journal.jpg");
+    background-attachment: fixed;
+    ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.5;
+    width: 100%;
+}
+
+/* Main styles */
+main{
+    grid-area: main;
+}
+
+.about {
+    margin: 40px auto;
+}
+
+.methodoly {
+    justify-content: center;
+}
+
+.container-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer styles */
+footer {
+    color: #ffffff;
+    background-color: #191919;
+    grid-area: footer;
+}
+
+footer > div.container {
+    flex-direction: column;
+}

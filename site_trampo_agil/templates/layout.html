@@ -1,0 +1,99 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trampo Ágil</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media-queries.css' %}">
+</head>
+<body>
+    <div class="grid">
+        <header>
+            <div class="container">
+                <nav>
+                    <a href="/">
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="">Sou Empresa</a>
+                        </li>
+                        <li>
+                            <a href="">Sou Candidato</a>
+                        </li>
+                        <li>
+                            <a href="">Sobre Nós</a>
+                        </li>
+                        <li>
+                            <a href="">Entrar</a>
+                        </li>
+                        <li>
+                            <button>Vagas</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-opacity">
+                <div class="header-img"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, alias.</p>
+            </div>
+        </header>
+        <main>        
+            {% block home %}
+
+            {% endblock %}
+        </main>
+        <footer>
+            <div class="container">
+                <h1>TrampoÁgil</h1>
+                <ul>
+                    <li>
+                        <h4>TrampoÁgil</h4>
+                    </li>
+                    <li>Sobre nós</li>
+                    <li>Trabalhe conosco</li>
+                    <li>Blog</li>
+                    <li>Calculadora de salários</li>
+                    <li>Central de ajuda</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Sou empresa</h4>
+                    </li>
+                    <li>Como funciona</li>
+                    <li>Histórias de sucesso</li>
+                    <li>Recomende e ganhe/li>
+                    <li>Blog empresas</li>
+                    <li>Dúvidas</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Sou candidato</h4>
+                    </li>
+                    <li>Como funciona</li>
+                    <li>Histórias de sucesso</li>
+                    <li>Recomende e ganhe</li>
+                    <li>Blog candidatos</li>
+                    <li>Dúvidas</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>Contato</h4>
+                    </li>
+                    <li>
+                        <address>
+                            <a href="tel:+55 11 4444-5555">+55 11 4444-5555</a>
+                            <a href="mailto:hello@trampoagil.com">hello@trampoagil.com</a>
+                            <p>Avenida Paulista 1374, 20º Andar - Cerqueira César - São Paulo/SP</p>
+                        </address>
+                    </li>
+                </ul>
+            </div><!-- /class="container" -->
+        </footer>
+    </div>
+</body>
+</html>

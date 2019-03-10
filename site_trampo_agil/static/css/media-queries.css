@@ -1,0 +1,23 @@
+/*---------- Media Queries ---------- */
+/* Breakpoint for tablets */
+@media(min-width: 768px) {
+ 
+    footer > div.container {
+        flex-direction: row;
+    }
+}
+
+/* Breakpoint for small notebooks */
+@media(min-width: 992px) {
+    footer > div.container {
+        flex-direction: row;
+    }
+
+}
+
+/* Breakpoint for desktops */
+@media(min-width: 1160px) {
+    .container {
+        max-width: 1200px;
+    }
+}
