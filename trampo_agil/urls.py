@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from site_trampo_agil.views import render_home, render_candidatos, render_empresas, render_login_candidatos, render_login_empresas, render_mural_vagas
+from django.conf.urls import include, url
+from django.conf import settings
+from site_trampo_agil.views import render_home, render_candidatos, render_empresas, render_login_candidatos, render_login_empresas
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,5 +26,5 @@ urlpatterns = [
     path('empresas', render_empresas),
     path('entrar/login_candidatos', render_login_candidatos),
     path('entrar/login_empresas', render_login_empresas),
-    path('vagas', render_mural_vagas),
+    url(r'^vagas', include('mural_vagas.urls')),
 ]

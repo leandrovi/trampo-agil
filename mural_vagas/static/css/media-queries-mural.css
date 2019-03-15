@@ -1,0 +1,37 @@
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .header-area {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-area {
+        width: auto;
+    }
+
+    .menu nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu nav ul {
+        flex-direction: row;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

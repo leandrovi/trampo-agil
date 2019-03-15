@@ -1,0 +1,59 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Trampo Ágil</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/styles-mural.css' %}">
+        <link rel="stylesheet" href="{% static 'css/media-queries-mural.css' %}">
+        <script defer src="{% static 'js/mural.js' %}"></script>
+    </head>
+    <body>
+        {% block body %}
+        <header>
+            <div class="container header-area">
+                <div class="logo-area">
+                    <h1><a href="{% url 'vagas' %}" class="logo">Trampo<span>Ágil</span></a></h1>
+                    <div class="hamburger-menu">
+                        <span class="arrow arrow1"></span>
+                        <span class="arrow arrow2"></span>
+                        <span class="arrow arrow3"></span>
+                    </div>
+                </div>
+                <div class="menu">
+                    <nav class="menu-nav">
+                        <ul>
+                            <li><a href="{% url 'vagas' %}">Vagas</a></li>
+                            <li><a href="{% url 'candidaturas' %}">Candidaturas</a></li>
+                            <li><a href="{% url 'ajuda' %}">Ajuda</a></li>
+                        </ul>
+                        <ul class="user">
+                            <li>
+                                <a href="">Leandro Vieira</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">Perfil</a></li>
+                                    <li><a href="">Configurações</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="">Sair</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                {% block main %}
+                {% endblock main %}
+            </div>
+        </main>
+        {% endblock body %}
+    </body>
+</html>

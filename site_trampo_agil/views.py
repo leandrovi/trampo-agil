@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from site_trampo_agil.models import Candidato, Empresa
 
 # Create your views here.
 def render_home(request):
