@@ -1,19 +1,19 @@
+{% load  staticfiles %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
-</head>
+    <title>Entrar</title>
+    <link defer rel="stylesheet" href="{% static 'css/styles.css' %}">
 <body>
     <div class="divLoginForm">
         <form action="." method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-         <button class="btn-login">Entrar</button>
-         <a href="{% url 'candidatos' %}"> <button>entrar</button></a>
+         <a href="{% url 'candidatos' %}"> <button>Entrar</button></a>
 
         </form>
     </div>

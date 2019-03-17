@@ -25,7 +25,7 @@ urlpatterns = [
     path('', render_home),
     path('candidatos', render_candidatos, name='candidatos'),
     path('empresas', render_empresas),
-    path('entrar/login_candidatos', render_login_candidatos),
+    path('entrar/login_candidatos', render_login_candidatos, name='login_candidatos'),
     path('entrar/login_empresas', render_login_empresas),
     url('vagas', include('mural_vagas.urls')),
 
