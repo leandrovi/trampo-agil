@@ -8,12 +8,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Entrar</title>
     <link defer rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+
 <body>
+    <h2>ENTRAR</h2>
+
     <div class="divLoginForm">
+    <div class="container-login100">
+    <div class="wrap-login100 p-t-50 p-b-90">
         <form action="." method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-         <a href="{% url 'candidatos' %}"> <button>Entrar</button></a>
+         <a href="{% url 'candidatos' %}"> 
+             
+            <button>Entrar</button></a>
 
         </form>
     </div>
