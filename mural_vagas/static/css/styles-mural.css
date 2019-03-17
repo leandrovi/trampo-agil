@@ -5,8 +5,9 @@ body {
 }
 
 ul {
-    margin: 0;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -66,6 +67,11 @@ header {
     color: #f7ce28;
 }
 
+.logo {
+    display: flex;  
+    font-size: 24px;
+}
+
 .menu {
     display: flex;
     height: auto;
@@ -88,6 +94,17 @@ header {
     flex-direction: column;
 }
 
+.menu a {
+    color: #777777;
+    padding: 10px 0;
+}
+
+.menu a:hover,
+.menu a:active {
+    cursor: pointer;
+    color: #222222;
+}
+
 .hamburger-menu {
     align-items: center;
     display: flex;
@@ -100,7 +117,7 @@ header {
 .arrow {
     background-color: #333333;
     border-radius: 50px;
-    height: 3px;
+    height: 2px;
     margin: 3px 0;
     width: 100%;
 }
