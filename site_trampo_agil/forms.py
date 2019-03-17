@@ -1,11 +1,13 @@
 from django import forms
-from site_trampo_agil.models import Logincandidatos
+from site_trampo_agil.models import LoginCandidatos 
 
 class LoginCriarForm(forms.ModelForm):
-    class Meta:
-        models = Contato
+   class Meta:
+        models = LoginCandidatos
         fields =  [
-                'Email'
-                'Senha'
+                'nome',
+                'email',
+                'assunto',
+                'descrição',
         ]
-
+        
