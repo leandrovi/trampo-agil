@@ -26,3 +26,15 @@ class Empresa(models.Model):
     def __str__(self):
         return self.nome
 
+
+class LoginCandidatos(models.Model):
+
+  nome =models.CharField(max_length=40)
+  email = models.EmailField()
+  assunto =  models.CharField(max_length=2)
+  descrição = models.TextField(max_length=240, blank=True, null=True)
+
+def __str__(self):
+       return self.email
+
+

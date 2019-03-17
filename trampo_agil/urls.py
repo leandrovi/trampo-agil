@@ -19,12 +19,15 @@ from django.conf.urls import include, url
 from django.conf import settings
 from site_trampo_agil.views import render_home, render_candidatos, render_empresas, render_login_candidatos, render_login_empresas
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', render_home),
-    path('candidatos', render_candidatos),
+    path('candidatos', render_candidatos, name='candidatos'),
     path('empresas', render_empresas),
     path('entrar/login_candidatos', render_login_candidatos),
     path('entrar/login_empresas', render_login_empresas),
-    url(r'^vagas', include('mural_vagas.urls')),
+    url('vagas', include('mural_vagas.urls')),
+
 ]
+

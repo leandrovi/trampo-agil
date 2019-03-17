@@ -6,3 +6,4 @@ from mural_vagas.models import Vaga
 admin.site.register(Candidato)
 admin.site.register(Empresa)
 admin.site.register(Vaga)
+
