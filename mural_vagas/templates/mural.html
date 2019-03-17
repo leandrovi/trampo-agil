@@ -1,0 +1,16 @@
+{% for vaga in vagas %}
+<li>
+    <h4>{{vaga.titulo}}</h4>
+    <h5><i class="far fa-building"></i> {{vaga.empresa}}</h5>
+    <div class="vaga-container">
+        <p class="description">{{vaga.desc}}</p>
+        <div class="splitter"></div>
+        <div class="salary">
+            <p><i class="fas fa-dollar-sign"></i> {{vaga.salario}},00</p>
+            <button class="apply" type=button>
+                <span>Candidatar</span>
+            </button>
+        </div>
+    </div>
+</li>
+{% endfor %}

@@ -83,6 +83,8 @@ header {
 .menu nav {
     display: none;
     flex-direction: column;
+    padding: 10px 0;
+    width: 100%;
 }
 
 .menu nav.active {
@@ -94,13 +96,22 @@ header {
     flex-direction: column;
 }
 
+.menu li,
 .menu a {
     color: #777777;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.menu-nav li {
     padding: 10px 0;
 }
 
 .menu a:hover,
-.menu a:active {
+.menu a:active,
+.menu li:hover,
+.menu li:active {
     cursor: pointer;
     color: #222222;
 }
@@ -119,5 +130,214 @@ header {
     border-radius: 50px;
     height: 2px;
     margin: 3px 0;
+    transition: .5s;
     width: 100%;
+}
+/* 
+.arrow1.animate {
+    animation: arrow-1;
+    animation-duration: .1s;
+}
+.arrow2.animate { 
+    animation: arrow-2;
+    animation-duration: .5s;
+}
+.arrow3.animate { 
+    animation: arrow-3;
+    animation-duration: .1s;
+} */
+/* 
+@keyframes arrow-1 {
+    0% { }
+    70% {
+        transform: translateY(8px);
+    }
+    100% { 
+        transform-origin: center;
+        transform: rotate(45deg);
+     }
+}
+
+@keyframes arrow-2 {
+    0% { }
+    70% { }
+    100% { 
+        transform-origin: center;
+        transform: rotate(45deg);
+     }
+}
+
+@keyframes arrow-3 {
+    0% { }
+    70% {
+        transform: translateY(-8px);
+    }
+    100% { 
+        transform-origin: center;
+        transform: rotate(-45deg);
+     }
+} */
+
+.mobile-divider,
+.divider {
+    border-bottom: .5px solid #e7e7e7;
+    height: 0;
+    width: 100%;
+}
+
+.dropdown {
+    padding: 0 !important;
+}
+
+.dropdown-menu {
+    display: none !important;
+    padding-left: 10px;
+}
+
+.dropdown-menu.active {
+    display: flex !important;
+    flex-direction: column;
+}
+
+/* Main styles */
+.mural-container {
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-header {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #eee;
+    margin: 20px 0;
+    max-width: 900px;
+    padding-bottom: 9px;
+    width: 100%;
+}
+
+.mural {
+    display: flex;
+    flex-direction: column !important;
+}
+
+.mural li {
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    margin: 10px 0;
+    max-width: 900px;
+    width: 100%;
+}
+
+.mural li h4 {
+    background-color: #f7ce28;
+    color: #333333;
+    padding: 10px;
+}
+
+.mural li h5 {
+    padding: 20px 10px 10px 10px;
+}
+
+.vaga-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.description {
+    width: 100%;
+}
+
+.splitter {
+    background-color: #e7e7e7;
+    height: 1px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.salary {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.salary p {
+    margin: 0 0 20px 0;
+}
+
+button {
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  color: #fff;
+  letter-spacing: 0.025em;
+
+  background: #379aff;
+  padding: 14px 11px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  min-width: 120px;
+  overflow: hidden;
+
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, 0%);
+}
+
+button span {
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+button:after,
+button:before {
+  padding: 18px 0 11px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(-100% - 30px);
+  height: calc(100% - 29px);
+  width: calc(100% + 20px);
+  color: #fff;
+  border-radius: 2px;
+  transform: skew(-25deg);
+}
+
+button:after {
+  background: #fff;
+  transition: left 0.8s cubic-bezier(0.86, 0, 0.07, 1) 0.2s;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+button:before {
+  background: #13c276;
+  z-index: 5;
+  transition: left 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+button:hover:after {
+  left: calc(0% - 10px);
+  transition: left 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+button:hover:before {
+  left: calc(0% - 10px);
+  transition: left 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+canvas {
+  width: 420px;
+  height: 420px;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }

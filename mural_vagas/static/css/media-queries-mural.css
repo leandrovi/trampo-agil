@@ -11,24 +11,82 @@
         justify-content: space-between;
     }
 
-    .logo-area {
+    .logo-area,
+    .menu {
         width: auto;
-    }
-
-    .menu nav {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .menu nav ul {
-        flex-direction: row;
     }
 
     .hamburger-menu {
         display: none;
     }
 
+    .menu nav {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        width: auto;
+    }
 
+    .menu nav ul {
+        flex-direction: row;
+    }
+
+    .user {
+        flex-direction: column !important;
+    }
+
+    .menu-nav li {
+        padding: 0 0 0 50px;
+    }
+
+    .mobile-divider {
+        display: none;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-menu {
+        background-color: #ffffff;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: 4px;
+        -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        padding: 5px 20px;
+        position: absolute;
+        /* margin: 2px 0 0; */
+        right: 0;
+        top: 21px;
+    }
+
+    .dropdown-menu li {
+        padding: 10px 0;
+    }
+
+    .mural li h4 {
+        padding: 20px;
+    }
+    
+    .mural li h5 {
+        padding: 20px 10px 0px 20px;
+    }
+
+    .vaga-container {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+    }
+    
+    .description {
+        width: 65%;
+    }
+
+    .splitter {
+        height: auto;
+        margin: 0;
+        width: 1px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
