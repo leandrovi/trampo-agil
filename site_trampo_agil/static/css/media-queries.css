@@ -1,7 +1,35 @@
 /*---------- Media Queries ---------- */
 /* Breakpoint for tablets */
 @media(min-width: 768px) {
- 
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header > .header-img{
+        background-size: 768px;
+    }
+    body > .container nav{
+        display: flex;
+        margin-right: 25%;
+    }
+    .about p{
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    section > div.methodoly{
+        display: flex;
+        flex-direction: column;
+    }
+    .methodoly h2{
+        font-size: 14pt;
+        flex-wrap: wrap;
+        width: 75%;
+    }
+    
+    .container-card > .card {
+        flex-direction: column;
+        width: 75%;
+    }
     footer > div.container {
         flex-direction: row;
     }

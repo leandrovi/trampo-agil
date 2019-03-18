@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" href="{% static 'css/media-queries.css' %}">
+    <script src="{% static '../static/js/scripts.js' %}"></script>
 </head>
 <body>
     <div class="grid">
@@ -40,7 +41,7 @@
             </div>
             <div class="header-opacity">
                 <div class="header-img"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, alias.</p>
+                <p class="tracking-in-expand">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, alias.</p>
             </div>
         </header>
         <main>        
@@ -50,14 +51,14 @@
         </main>
         <footer>
             <div class="container">
-                <h1>TrampoÁgil</h1>
+                <h1 class="logo">Trampo<span>Ágil</span></h1>
                 <ul>
                     <li>
                         <h4>TrampoÁgil</h4>
                     </li>
                     <li>Sobre nós</li>
                     <li>Trabalhe conosco</li>
-                    <li>Blog</li>
+                    <!-- <li>Blog</li> -->
                     <li>Calculadora de salários</li>
                     <li>Central de ajuda</li>
                 </ul>
@@ -67,7 +68,7 @@
                     </li>
                     <li>Como funciona</li>
                     <li>Histórias de sucesso</li>
-                    <li>Recomende e ganhe/li>
+                    <li>Recomende e ganhe</li>
                     <li>Blog empresas</li>
                     <li>Dúvidas</li>
                 </ul>
@@ -78,7 +79,7 @@
                     <li>Como funciona</li>
                     <li>Histórias de sucesso</li>
                     <li>Recomende e ganhe</li>
-                    <li>Blog candidatos</li>
+                    <!-- <li>Blog candidatos</li> -->
                     <li>Dúvidas</li>
                 </ul>
                 <ul>
@@ -92,6 +93,11 @@
                             <p>Avenida Paulista 1374, 20º Andar - Cerqueira César - São Paulo/SP</p>
                         </address>
                     </li>
+                    <aside class="icons">
+                        <img src="{% static '../static/img/linkedin.png' %}" alt="" width="18" height="18">
+                        <img src="{% static '../static/img/facebook.png' %}" alt="" width="18" height="18">
+                        <img src="{% static '../static/img/youtube.png' %}" alt="" width="18" height="20"> 
+                    </aside>
                 </ul>
             </div><!-- /class="container" -->
         </footer>

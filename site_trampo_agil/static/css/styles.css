@@ -50,7 +50,9 @@ p {
 /* Header styles */
 header {
     border-top: 2px solid #f7ce28;
-    grid-area: header;    
+    grid-area: header;
+    background-color:#191919;
+
 }
 
 .logo > span {
@@ -64,6 +66,10 @@ nav {
     justify-content: space-between;
     width: 100%;
 }
+nav a .logo{
+    color: white;
+}
+
 
 nav ul {
     display: flex;
@@ -72,7 +78,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #222;
+    color:white;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: -.8px;
@@ -124,16 +130,26 @@ nav ul li a:active {
 /* Main styles */
 main{
     grid-area: main;
+    padding:40px;
 }
-
+.logo span{
+    text-shadow: 1px 1px black;
+}
 .about {
-    margin: 40px auto;
+    margin: 40px;
 }
-
+.about h2{
+    margin-bottom: 30px;    
+}
 .methodoly {
     justify-content: center;
 }
-
+.methodoly h2{
+    margin-bottom: 40px;
+}
+.methodoly p{
+    margin-bottom: 20px;
+}
 .container-card {
     display: flex;
     justify-content: space-between;
@@ -142,8 +158,17 @@ main{
 .card {
     display: flex;
     flex-direction: column;
+    border: 2px dotted #191919;
+    padding: 20px;
+    border-radius: 100px;
+    transition: 0.4s;
+    margin-right: 12px;
 }
+.card:hover{
+    cursor: pointer;
+    background-color:#f7ce28; 
 
+}
 /* Footer styles */
 footer {
     color: #ffffff;
@@ -154,7 +179,12 @@ footer {
 footer > div.container {
     flex-direction: column;
 }
-
+footer .container h1{
+    margin-top: 40px;
+}
+footer .container ul{
+    margin-top: 30px;
+}
 .divLoginForm p{
     display:flex;
     justify-content: center;
@@ -216,8 +246,12 @@ h2{
   
 
 }
+.methodoly h2 span{
+    color:#f7ce28;
+    text-shadow: 1px 1px black;
+}
 
-input:focus {
+input:focus {   
     background:#CCC;  
     -webkit-transition: 0.5s ease-in;
     -moz-transition: 0.5s ease-in;
@@ -225,6 +259,41 @@ input:focus {
     transition: 0.5s ease-in;
    
 } 
-
-
-
+.icons img{
+    padding: 5px;
+}
+.icons img:hover{
+    cursor: pointer;
+    color:#f7ce28;
+}
+/* animação letra */
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+      animation-delay:0.1s;
+    }
+    40% {
+      opacity: 0.6;
+      animation-delay: 0.2s;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+} 
