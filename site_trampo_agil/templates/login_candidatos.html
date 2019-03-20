@@ -1,4 +1,4 @@
-{% load  staticfiles %}
+{% load staticfiles %}
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -11,17 +11,24 @@
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
 
 <body>
-    <h2>ENTRAR</h2>
+   
 
     <div class="divLoginForm">
     <div class="container-login100">
     <div class="wrap-login100 p-t-50 p-b-90">
         <form action="." method="POST">
-            {% csrf_token %}
-            {{ form.as_p }}
-         <a href="{% url 'candidatos' %}"> 
+
+            <div class="ana2">
+
+                <div class="ana">
              
-            <button>Entrar</button></a>
+                    <h1>Login</h1>
+                    <input type="text" name="" id="">
+                    <input type="password" name="" id="">
+                    <button> <a href="{% url 'vagas' %}">Entrar</a> </button>
+
+                </div>
+            </div>
 
         </form>
     </div>

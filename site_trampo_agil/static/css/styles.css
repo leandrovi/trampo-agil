@@ -59,25 +59,27 @@ header {
     color: #f7ce28;
 }
 
-nav {
+.topo {
     align-items: center;
     display: flex;
-    height: 80px;
+    height: 90px;
     justify-content: space-between;
     width: 100%;
 }
-nav a .logo{
+.topo  .logo{
     color: white;
+    width: 300px;
+    margin: 0;
 }
 
 
-nav ul {
+.topo ul {
     display: flex;
     justify-content: space-between;
     width: 60%;
 }
 
-nav ul li a {
+.topo ul li a {
     color:white;
     font-size: 14px;
     font-weight: 300;
@@ -86,15 +88,15 @@ nav ul li a {
     transition: 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a:active {
+.topo ul li a:hover,
+.topo ul li a:active {
     color: #f7ce28;
     cursor: pointer;
 }
 
 .header-opacity {
     background-color: rgba(0,0,0,1);
-    height: 70vh;
+    /* height: 70vh; */
     position: relative;
     width: 100%;
 }
@@ -127,6 +129,11 @@ nav ul li a:active {
     width: 100%;
 }
 
+.bootstrap{
+    height: 500px;
+}
+ 
+
 /* Main styles */
 main{
     grid-area: main;
@@ -146,23 +153,38 @@ main{
 }
 .methodoly h2{
     margin-bottom: 40px;
+    
 }
 .methodoly p{
     margin-bottom: 20px;
+    
 }
 .container-card {
     display: flex;
     justify-content: space-between;
+
+}
+
+#card1{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7ce28;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.4s;
+    margin-right: 12px;
+    
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    border: 2px dotted #191919;
+    
     padding: 20px;
-    border-radius: 100px;
+    border-radius: 15px;
     transition: 0.4s;
     margin-right: 12px;
+    
 }
 .card:hover{
     cursor: pointer;
@@ -176,11 +198,16 @@ footer {
     grid-area: footer;
 }
 
+footer li{
+    font-size: 12px;
+}
+
 footer > div.container {
     flex-direction: column;
 }
 footer .container h1{
     margin-top: 40px;
+    font-size: 14px;
 }
 footer .container ul{
     margin-top: 30px;
@@ -194,6 +221,50 @@ footer .container ul{
     line-height: 1.2;
 }
 
+.ana{
+    width: 100%;
+    height: 500px;
+    background-color: #f7ce28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.ana h1{
+    margin: 10px;
+}
+
+.ana input[type=text]{
+    width: 200px;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 5px;
+}
+.ana input[type=password]{
+    width: 200px;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 5px;
+}
+.ana button{
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #f7ce28;
+    border-radius: 15px;
+    
+}
+
+.ana2{
+    width: 100%;
+    height: 100%;;
+    background-color: #fff;
+    grid-area: main;
+}
 
 .container-login100 {
         width: 100%;
@@ -266,6 +337,9 @@ input:focus {
     cursor: pointer;
     color:#f7ce28;
 }
+.tracking-in-expand{
+
+}
 /* animação letra */
 @-webkit-keyframes tracking-in-expand {
     0% {
@@ -297,3 +371,8 @@ input:focus {
 	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 } 
+/* caroussel background */
+.carousel{
+    background-color: white;
+    display: block;
+}

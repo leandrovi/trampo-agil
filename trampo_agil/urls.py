@@ -18,6 +18,7 @@ from django.urls import path
 from django.conf.urls import include, url
 from django.conf import settings
 from site_trampo_agil.views import render_home, render_candidatos, render_empresas, render_login_candidatos, render_login_empresas
+# from cadastro.views import index, special, include, user_logout
 
 
 urlpatterns = [
@@ -28,6 +29,10 @@ urlpatterns = [
     path('entrar/login_candidatos', render_login_candidatos, name='login_candidatos'),
     path('entrar/login_empresas', render_login_empresas),
     url('vagas', include('mural_vagas.urls')),
+    # url('',index,name='index'),
+    # url('special/',special,name='special'),
+    # url('dappx/',include('dappx.urls')),
+    # url('logout/', user_logout, name='logout'),
 
 ]
 
